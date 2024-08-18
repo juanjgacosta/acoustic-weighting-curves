@@ -6,7 +6,13 @@ import os
 def plot_weighting_curve(_central_frequencies, _weighting_curve, _curve_name):
     # Create the plot
     plt.figure(figsize=(10, 6))
-    plt.plot(_central_frequencies, _weighting_curve, linestyle="-", color="b")
+    plt.plot(
+        _central_frequencies,
+        _weighting_curve,
+        linestyle="-",
+        color="b",
+        linewidth=2.0,
+    )
 
     # Setting the scale of x-axis to log
     plt.xscale("log")

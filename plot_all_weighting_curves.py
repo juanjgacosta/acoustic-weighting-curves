@@ -14,6 +14,7 @@ def plot_all_weighting_curves(
         linestyle="-",
         color="b",
         label="A-Weighting Curve",
+        linewidth=2.0,
     )
 
     plt.plot(
@@ -22,18 +23,23 @@ def plot_all_weighting_curves(
         linestyle="-",
         color="r",
         label="C-Weighting Curve",
+        linewidth=2.0,
     )
 
     plt.plot(
-    _central_frequencies,
-    _weighting_curve_3,
-    linestyle="-",
-    color="g",
-    label="Z-Weighting Curve",
+        _central_frequencies,
+        _weighting_curve_3,
+        linestyle="-",
+        color="g",
+        label="Z-Weighting Curve",
+        linewidth=2.0,
     )
 
     # Setting the scale of x-axis to log
     plt.xscale("log")
+
+    # Setting the scale of x-axis to log
+    plt.ylim(-100, 20)
 
     # Set the ticks and labels for the x-axis
     plt.xticks(
@@ -52,7 +58,7 @@ def plot_all_weighting_curves(
     plt.grid(True, which="both", linestyle="--", linewidth=1.0)
 
     # Add a legend
-    plt.legend()
+    plt.legend(fontsize=12, loc="lower right")
 
     # Adjust layout to prevent cutting off the labels
     plt.tight_layout()
