@@ -12,7 +12,7 @@ Project that graphs the frequency weighting curves most commonly used in acousti
 
 ## Intro
 
-The sound pressure measurement are weighted to represent the human ear’s sensitivity as a function of frequencies. 
+The sound pressure measurement are weighted to represent the human ear’s sensitivity as a function of frequencies.
 
 Three commonly used acoustic weighting curves are A, C, and Z.
 
@@ -30,7 +30,7 @@ Negative weighting values are associated with low-frequency sounds in the range 
 
 - Run main script
 
-  `python3  main.py`
+  `python3 main.py`
 
 ## A-Weighting curve
 
