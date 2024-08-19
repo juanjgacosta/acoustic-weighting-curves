@@ -5,6 +5,7 @@ Project that graphs the frequency weighting curves most commonly used in acousti
 <h2> Table of Contents</h2>
 
 - [Intro](#intro)
+- [Install](#install)
 - [A-Weighting curve](#a-weighting-curve)
 - [C-Weighting curve](#c-weighting-curve)
 - [Weighting curves](#weighting-curves)
@@ -16,6 +17,20 @@ The sound pressure measurement are weighted to represent the human ear’s sensi
 Three commonly used acoustic weighting curves are A, C, and Z.
 
 Negative weighting values are associated with low-frequency sounds in the range of 20 Hz to 1 kHz, as the human ear is much less sensitive to low-frequency than higher-frequency sounds in the range of 1 kHz to 4 kHz
+
+## Install
+
+- Create virtual environment at project root directory
+
+  `python3 -m venv .venv`
+
+- Install dependencies
+
+  `pip install -r requirements.txt`
+
+- Run main script
+
+  `python3  main.py`
 
 ## A-Weighting curve
 
