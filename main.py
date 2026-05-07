@@ -13,6 +13,7 @@ z_weighting_curve = np.array(json_data["z_weighting_curve"])
 
 plot_weighting_curve(central_frequencies, a_weighting_curve, "a_weighting")
 plot_weighting_curve(central_frequencies, c_weighting_curve, "c_weighting")
+plot_weighting_curve(central_frequencies, z_weighting_curve, "z_weighting")
 plot_all_weighting_curves(
     central_frequencies, a_weighting_curve, c_weighting_curve, z_weighting_curve
 )

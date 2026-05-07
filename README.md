@@ -1,22 +1,22 @@
-<h1> Acoustic Weighting Curves </h1>
+<h1> Acoustic Frequency Weighting Curves </h1>
 
-Project that graphs the frequency weighting curves most commonly used in acoustics.
+Project for modeling and visualizing the frequency weighting curves most commonly used in acoustics.
 
 <h2> Table of Contents</h2>
 
-- [Intro](#intro)
-- [Install](#install)
 - [A-Weighting curve](#a-weighting-curve)
 - [C-Weighting curve](#c-weighting-curve)
+- [Z-Weighting curve](#z-weighting-curve)
 - [Weighting curves](#weighting-curves)
+- [References](#references)
 
 ## Intro
 
-The sound pressure measurement are weighted to represent the human ear’s sensitivity as a function of frequencies.
+Sound pressure levels are frequency-weighted to approximate the sensitivity of human hearing as a function of frequency.
 
 Three commonly used acoustic weighting curves are A, C, and Z.
 
-Negative weighting values are associated with low-frequency sounds in the range of 20 Hz to 1 kHz, as the human ear is much less sensitive to low-frequency than higher-frequency sounds in the range of 1 kHz to 4 kHz
+Negative weighting values indicate attenuation applied to low-frequency components, reflecting the lower sensitivity of human hearing at low frequencies compared to the mid-frequency range between approximately 1 kHz and 4 kHz.
 
 ## Install
 
@@ -38,12 +38,32 @@ Negative weighting values are associated with low-frequency sounds in the range 
 
 ## A-Weighting curve
 
+The A-weighting curve approximates the sensitivity of human hearing at moderate sound pressure levels and is widely used in environmental and occupational noise measurements.
+
 <img src="./figures/a_weighting_curve.png" alt="A-Weighting curve image"/>
 
 ## C-Weighting curve
 
+The C-weighting curve provides a flatter frequency response and is commonly used for high-level sound measurements, peak sound pressure evaluation, and low-frequency analysis.
+
 <img src="./figures/c_weighting_curve.png" alt="C-Weighting curve image"/>
+
+## Z-Weighting curve
+
+The Z-weighting curve represents a flat frequency response with no intentional weighting applied across the audible frequency spectrum.
+
+<img src="./figures/z_weighting_curve.png" alt="Z-Weighting curve image"/>
 
 ## Weighting curves
 
 <img src="./figures/weighting_curves.png" alt="Weighting curves image"/>
+
+# References
+
+- IEC 61672-1. _Electroacoustics – Sound Level Meters – Part 1: Specifications_.
+
+- Beranek, L. L. _Acoustics_. Acoustical Society of America.
+
+- Bies, D. A.; Hansen, C. H.; Howard, C. Q. _Engineering Noise Control: Theory and Practice_. CRC Press.
+
+- Gómez Acosta, J. J. _Projeto e Desenvolvimento de um Sonômetro de Baixo Custo_. Master's Dissertation, Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio), 2023.
